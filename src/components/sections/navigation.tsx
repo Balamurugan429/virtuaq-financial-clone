@@ -7,23 +7,20 @@ import { ChevronDown, Menu, X } from 'lucide-react';
 
 const navItems = [
   { href: "/", label: "Home" },
-  { 
+  {
     label: "Industries",
     dropdown: [
-      { href: "/financial", label: "Financial Services" },
-      { href: "/healthcare", label: "Healthcare" },
-      { href: "/government", label: "Government" },
-      { href: "/singapore-queue-management-system", label: "SME Singapore" },
-      { href: "/retail-queue-management-system", label: "Retail" },
-      { href: "/temple-visitor-management-system", label: "Temples" },
-      { href: "/airport-queue-management-system", label: "Airports" },
-      { href: "/virtuaq4", label: "More..." },
-    ]
+      { href: "#smart-queue", label: "Smart queue management" },
+      { href: "#integration", label: "Effortless integration" },
+      { href: "#efficiency", label: "Operational efficiency" },
+      { href: "#personalized", label: "Personalized banking" },
+      { href: "#used-by", label: "Used By" },
+    ],
   },
-  { href: "/features", label: "Features" },
-  { href: "/blog", label: "Blog" },
-  { href: "/partners", label: "Partners" },
-  { href: "/about", label: "About" },
+  { href: "#features", label: "Features" },
+  { href: "#carousel", label: "Blog" },
+  { href: "#used-by", label: "Partners" },
+  { href: "#footer", label: "About" },
 ];
 
 export default function Navigation() {
@@ -93,7 +90,7 @@ export default function Navigation() {
               )
             ))}
           </ul>
-          <Link href="/request-demo" className="ml-8 py-3 px-5 bg-primary text-primary-foreground rounded-full text-[16px] font-medium whitespace-nowrap hover:bg-button-hover transition-colors">
+          <Link href="#contact" className="ml-8 py-3 px-5 bg-primary text-primary-foreground rounded-full text-[16px] font-medium whitespace-nowrap hover:bg-button-hover transition-colors">
             Get An Instant call back
           </Link>
         </div>
@@ -136,7 +133,7 @@ export default function Navigation() {
               )
               ))}
               <li className="mt-4">
-                  <Link href="/request-demo" className="block w-full text-center py-3 px-5 bg-primary text-primary-foreground rounded-full text-[16px] font-medium whitespace-nowrap hover:bg-button-hover transition-colors" onClick={closeMobileMenu}>
+                  <Link href="#contact" className="block w-full text-center py-3 px-5 bg-primary text-primary-foreground rounded-full text-[16px] font-medium whitespace-nowrap hover:bg-button-hover transition-colors" onClick={closeMobileMenu}>
                   Get An Instant call back
                   </Link>
               </li>

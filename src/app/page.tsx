@@ -16,18 +16,18 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <main>
-        <HeroSection />
-        <QueueManagementIntro />
-        <FeaturesOverview />
-        <SmartQueueDetail />
-        <EffortlessIntegrationSection />
-        <OperationalEfficiency />
-        <PersonalizedBanking />
-        <ContactForm />
-        <DigitalBankingCarousel />
-        <UsedByBanks />
+        <section id="hero" className="scroll-mt-[90px]"><HeroSection /></section>
+        <section id="intro" className="scroll-mt-[90px]"><QueueManagementIntro /></section>
+        <section id="features" className="scroll-mt-[90px]"><FeaturesOverview /></section>
+        <section id="smart-queue" className="scroll-mt-[90px]"><SmartQueueDetail /></section>
+        <section id="integration" className="scroll-mt-[90px]"><EffortlessIntegrationSection /></section>
+        <section id="efficiency" className="scroll-mt-[90px]"><OperationalEfficiency /></section>
+        <section id="personalized" className="scroll-mt-[90px]"><PersonalizedBanking /></section>
+        <section id="contact" className="scroll-mt-[90px]"><ContactForm /></section>
+        <section id="carousel" className="scroll-mt-[90px]"><DigitalBankingCarousel /></section>
+        <section id="used-by" className="scroll-mt-[90px]"><UsedByBanks /></section>
       </main>
-      <Footer />
+      <div id="footer"><Footer /></div>
     </div>
   );
 }
